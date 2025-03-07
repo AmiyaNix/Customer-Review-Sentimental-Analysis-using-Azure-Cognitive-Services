@@ -5,8 +5,9 @@ from msrest.authentication import CognitiveServicesCredentials
 
 def analyze_sentiment(text):
     try:
-        subscription_key = "3998ee3aa0b24baba6a6b520b1a3f61a"
-        endpoint = "https://customerreview.cognitiveservices.azure.com/"
+        #create Azure Cognitive Service instance and generate subscription key and endpoint 
+        subscription_key = ""
+        endpoint = ""
 
         credentials = CognitiveServicesCredentials(subscription_key)
         text_analytics_client = TextAnalyticsClient(endpoint=endpoint, credentials=credentials)
